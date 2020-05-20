@@ -10,6 +10,7 @@ _supplement_ those sites.
 
 1. Know how to Github.
 1. Know how to install a ruby.
+1. Know how to rspec.
 
 ## Getting Started
 
@@ -30,8 +31,14 @@ use the ruby-doc for the appropriate ruby version.
 Go to the [lib/drills](lib/drills) directory and choose a file. Inside the file will be details
 on what is being drilled. Fill in the methods as directed.
 
-If you would like to run a file, try
+There are specs for each drill file. You can test your solutions by either running the specific spec or run
+all the specs. You may also choose to run guard for continuous feedback.
 
-```shell
-  ruby lib/drills/map.rb
+### Guard
+
+[Guard](https://github.com/guard/guard) allows actions to be executed when file changes occur. This repo is
+configured to run rspec automatically when changes are made. Simple run guard in the terminal to activate.
+
+```shell script
+  $ guard
 ```
