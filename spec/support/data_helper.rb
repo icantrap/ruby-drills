@@ -2,11 +2,11 @@
 
 module DataHelper
   def array_of_random_numbers
-    Array.new(rand(1000)) { random_number }
+    Array.new(rand(10)) { random_number }
   end
 
   def array_of_random_strings
-    Array.new(rand(1000)) { random_string }
+    Array.new(rand(10)) { random_string }
   end
 
   def random_number
@@ -15,6 +15,6 @@ module DataHelper
 
   def random_string
     characters = [('a'..'z'), ('A'..'Z')].map(&:to_a).flatten
-    Array.new(rand(1000)) { characters.sample }.join
+    Array.new(rand(10)) { characters.sample }.join
   end
 end
