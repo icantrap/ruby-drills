@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require './lib/drills/maps'
+require './lib/drills/arrays/maps'
 
-describe Drills::Maps do
+describe Drills::Arrays::Maps do
   include DataHelper
 
   describe '.squares' do
@@ -11,7 +11,7 @@ describe Drills::Maps do
         input = array_of_random_numbers
         expectation = input.map { |number| number**2 }
 
-        expect(Drills::Maps.squares(input)).to eq(expectation)
+        expect(Drills::Arrays::Maps.squares(input)).to eq(expectation)
       end
     end
   end
@@ -22,7 +22,7 @@ describe Drills::Maps do
         input = array_of_random_strings
         expectation = input.map(&:upcase)
 
-        expect(Drills::Maps.uppercases(input)).to eq(expectation)
+        expect(Drills::Arrays::Maps.uppercases(input)).to eq(expectation)
       end
     end
   end
