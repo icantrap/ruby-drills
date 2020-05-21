@@ -2,7 +2,7 @@
 
 require './lib/drills/arrays/select'
 
-describe Drills::Arrays::Maps do
+describe Drills::Arrays::Select do
   include DataHelper
 
   describe '.evens' do
