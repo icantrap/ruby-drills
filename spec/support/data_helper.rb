@@ -9,6 +9,14 @@ module DataHelper
     Array.new(size) { random_string }
   end
 
+  def random_hash
+    hash = {}
+
+    rand(10).times { hash[random_string] = random_number }
+
+    hash
+  end
+
   def random_number
     rand(-1000..1000)
   end
