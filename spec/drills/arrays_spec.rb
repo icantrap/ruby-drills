@@ -149,11 +149,9 @@ describe Drills::Arrays do
       array = random_array(rand(3..10))
       value = [random_string, random_number, random_array, random_hash].sample
 
-      Drills::Arrays.set_third_element(array, value)
+      actual = Drills::Arrays.set_third_element(array, value)
 
-      array[2] = value
-
-      expect(hash).to eql(array)
+      expect(actual[2]).to eql(value)
     end
   end
 
@@ -169,7 +167,7 @@ describe Drills::Arrays do
       end
     end
 
-    context 'where the two hashes are not equal' do
+    context 'where the two arrays are not equal' do
       it 'returns false' do
         actual = Drills::Arrays.equal?(array1, array2)
 
