@@ -157,7 +157,7 @@ describe Drills::Arrays do
 
   describe '.equal?' do
     let(:array1) { random_array }
-    let(:array2) { array1 << random_string }
+    let(:array2) { random_array }
 
     context 'where the two arrays are equal' do
       it 'returns true' do
