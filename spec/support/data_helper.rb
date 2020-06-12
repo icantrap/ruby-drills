@@ -23,7 +23,7 @@ module DataHelper
 
   def random_string
     characters = [('a'..'z'), ('A'..'Z')].map(&:to_a).flatten
-    Array.new(rand(10)) { characters.sample }.join
+    Array.new(rand(1..10)) { characters.sample }.join
   end
 
   def random_array(size = rand(10))
