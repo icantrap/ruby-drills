@@ -62,7 +62,7 @@ describe Drills::Strings do
     end
 
     it 'returns true when the value is in the string' do
-      expect(Drills::Strings.value_in?(string1, value1)).to be true
+      expect(Drills::Strings.value_in?(string2, value2)).to be true
     end
   end
 
