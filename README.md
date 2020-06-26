@@ -1,5 +1,7 @@
 # Ruby Drills
 
+The default branch for this repo is **main**.
+
 ## Introduction
 There's plenty of websites that put cute stories behind exercises in the guise of helping you
 learn a skill. This project is not that. These are simple skill drills that let you get to the
