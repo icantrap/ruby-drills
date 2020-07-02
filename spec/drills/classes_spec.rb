@@ -30,7 +30,4 @@ describe Drills::Classes::Car do
       expect(car.year).to eq 'year'
     end
   end
-
-
-
 end
